@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
 @Import(AppV1Config.class)
-@SpringBootApplication(scanBasePackages = "springadvanced.app.proxy")
+@SpringBootApplication(scanBasePackages = "com.rojojun.springadvanced.app.proxy")
 public class SpringAdvancedApplication {
 
     public static void main(String[] args) {
