@@ -1,6 +1,6 @@
 package com.rojojun.springadvanced;
 
-import com.rojojun.springadvanced.app.proxy.config.v3_proxyFactory.ProxyFactoryConfigV1;
+import com.rojojun.springadvanced.app.proxy.config.v4.BeanPostProcessorConfig;
 import com.rojojun.springadvanced.trace.logtrace.LogTrace;
 import com.rojojun.springadvanced.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
 //@Import(DynamicProxyFilterConfig.class)
-@Import(ProxyFactoryConfigV1.class)
+@Import(BeanPostProcessorConfig.class)
 @SpringBootApplication(scanBasePackages = "com.rojojun.springadvanced.app.proxy")
 public class SpringAdvancedApplication {
 

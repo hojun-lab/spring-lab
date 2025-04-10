@@ -13,13 +13,13 @@ public class ProxyOrderControllerV3 {
         this.serviceV3 = serviceV3;
     }
 
-    @GetMapping("/proxy/v2/request")
+    @GetMapping("/proxy/v3/request")
     public String request(String itemId) {
         serviceV3.orderItem(itemId);
         return "ok";
     }
 
-    @GetMapping("/proxy/v2/no-log")
+    @GetMapping("/proxy/v3/no-log")
     public String noLog() {
         return "";
     }
